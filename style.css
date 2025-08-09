@@ -15,11 +15,18 @@ img {
   max-width: 100%;
   border-style: none;
 }
-li {
+li,
+a {
   list-style: none;
   float: left;
   padding: 10px;
   margin: 10px;
+}
+a {
+  color: inherit; /* テキスト色を親要素に合わせる */
+  text-decoration: none; /* 下線を消す */
+  cursor: default; /* マウスカーソルを通常矢印に */
+  /* pointer-events: none; */
 }
 .header-left {
   background-color: rgb(60, 60, 60);
